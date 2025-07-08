@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hacked</title>
+  <title>Test</title>
   <style>
     html, body {
       margin: 0;
@@ -10,30 +10,11 @@
       height: 100%;
       overflow: hidden;
     }
-
     body {
-      animation: zoomOut 5s ease-out forwards;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('https://github.com/spark-designs/hack/blob/main/007.jpg?raw=true') no-repeat center center fixed;
-      background-size: 120%;
-      z-index: -1;
-    }
-
-    @keyframes zoomOut {
-      from {
-        transform: scale(1.2);
-      }
-      to {
-        transform: scale(1);
-      }
+      background: url('https://raw.githubusercontent.com/spark-designs/hack/main/007.jpg') no-repeat center center;
+      background-size: contain; /* This avoids zooming in */
+      background-color: black;  /* Fills space around image if not full */
+      background-repeat: no-repeat;
     }
   </style>
 </head>
